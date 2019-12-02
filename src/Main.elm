@@ -2,6 +2,7 @@ module Main exposing (..)
 
 import Browser
 import Day1.Solution as Day1
+import Day2.Solution as Day2
 import Html exposing (Html, div, h1, img, text)
 import Html.Attributes exposing (src)
 
@@ -40,7 +41,7 @@ view : Model -> Html Msg
 view model =
     div []
         [ img [ src "/logo.svg" ] []
-        , h1 [] [ Day1.solve2 |> String.fromInt |> text ]
+        , h1 [] [ Day2.solve2 0 0 |> String.fromInt |> text ]
         ]
 
 
